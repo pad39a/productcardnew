@@ -1,7 +1,7 @@
-import { ProductPageData } from '@/app/components/ProductPageTemplate';
-import hexagonAntcomLogo from 'figma:asset/9854e5f16552ed056e5d55af39a0eb0abc6892f4.png';
-import antennaProductImage from 'figma:asset/452b69bb395cc19053e4cb69abfc21bca62c5faa.png';
-import heroBackground from 'figma:asset/8624f9524d3544dc8d7bd9fa3ead71e6a5cf4a01.png';
+import { ProductPageData } from '@/app/types/product';
+import hexagonAntcomLogo from '@/assets/9854e5f16552ed056e5d55af39a0eb0abc6892f4.png';
+import antennaProductImage from '@/assets/452b69bb395cc19053e4cb69abfc21bca62c5faa.png';
+import heroBackground from '@/assets/8624f9524d3544dc8d7bd9fa3ead71e6a5cf4a01.png';
 
 export const antcomG3ANT3XXXData: ProductPageData = {
   // Hero Section
