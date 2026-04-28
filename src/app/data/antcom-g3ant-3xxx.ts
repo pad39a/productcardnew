@@ -25,11 +25,11 @@ export const antcomG3ANT3XXXData: ProductPageData = {
     mpn: 'G3Ant-3XXX',
     standards: ['MIL-STD-883', 'RTCA DO160G'],
     technology: 'FPRA',
-    radiation: 'Report Available',
+    radiation: 'Active or Passive',
     bands: ['L1, E1, G1', 'L2, G2, G3, E5a'],
     vswr: '<2.0',
     polarization: 'RHCP',
-    lnaGain: '',
+    lnaGain: '33dB or 40dB',
   },
   
   electricalSpecs: [
@@ -38,8 +38,14 @@ export const antcomG3ANT3XXXData: ProductPageData = {
     { label: 'Power Handling', value: '1 Watt CW' },
     { label: 'Output Signal', value: 'Analog' },
     { label: 'Connector', value: 'SMA, SMB' },
+    { label: 'Impedance', value: '50 Ohms' },
   ],
-  
+
+  lnaPerformanceSpecs: [
+    { label: 'LNA Noise', value: '< 4dB' },
+    { label: 'LNA P1dB out', value: '7dBm' },
+  ],
+
   mechanicalSpecs: [
     { label: 'Weight', value: '0.18' },
     { label: 'Volume', value: '5.6' },
@@ -56,7 +62,14 @@ export const antcomG3ANT3XXXData: ProductPageData = {
     { label: 'Radiation Levels', value: 'LEO, MEO, GEO' },
     { label: 'Moisture Rating', value: 'Hermetic, IP 67, IP68' },
   ],
-  
+
+  additionalSpecs: [
+    { label: 'Warranty', value: '2 Years' },
+    { label: 'Lead Time', value: '8-12 Weeks' },
+    { label: 'ECCN', value: 'EAR99' },
+    { label: 'ITAR', value: 'Non-ITAR' },
+  ],
+
   // Tabs
   tabs: [
     { name: 'Aviation', color: 'orange' },

@@ -1,6 +1,6 @@
 import { ProductPageTemplate } from '@/app/components/ProductPageTemplate';
-import { antcomG3ANT3XXXData } from '@/app/data/antcom-g3ant-3xxx';
+import { inertialTestServicesData } from '@/app/data/inertial-test-services';
 
 export default function App() {
-  return <ProductPageTemplate data={antcomG3ANT3XXXData} />;
+  return <ProductPageTemplate data={inertialTestServicesData} />;
 }

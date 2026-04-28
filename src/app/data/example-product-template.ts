@@ -82,7 +82,13 @@ export const exampleProductData: ProductPageData = {
     { label: 'Connector Type', value: 'SMA Female' },
     { label: 'Impedance', value: '50 Ohm' },
   ],
-  
+
+  // LNA Performance Specifications
+  lnaPerformanceSpecs: [
+    { label: 'LNA Noise', value: '< 3dB' },
+    { label: 'LNA P1dB out', value: '10dBm' },
+  ],
+
   // Column 2: Mechanical Specifications
   mechanicalSpecs: [
     { label: 'Weight', value: '2.5 kg' },
@@ -102,7 +108,16 @@ export const exampleProductData: ProductPageData = {
     { label: 'Vibration', value: 'MIL-STD-810 compliant' },
     { label: 'IP Rating', value: 'IP65' },
   ],
-  
+
+  // Column 4: Additional Specifications
+  additionalSpecs: [
+    { label: 'Warranty', value: '3 Years' },
+    { label: 'Lead Time', value: '6-8 Weeks' },
+    { label: 'ECCN', value: 'EAR99' },
+    { label: 'ITAR Status', value: 'Non-ITAR' },
+    { label: 'RoHS Compliant', value: 'Yes' },
+  ],
+
   // ============================================================
   // NAVIGATION TABS - Industry/application categories
   // ============================================================

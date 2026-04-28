@@ -43,7 +43,7 @@ export interface ProductPageData {
   productReference: string;
   productTitle: string;
   productDescription: string;
-  
+
   // Product Highlights
   origin: {
     country: string;
@@ -52,17 +52,20 @@ export interface ProductPageData {
   manufacturerLogo: string;
   productImage: string;
   datasheetUrl?: string;
-  
+
   // Specifications
   componentSpec: ComponentSpec;
   electricalSpecs: SpecRow[];
+  lnaPerformanceSpecs: SpecRow[];
+  lnaPerformanceTitle?: string; // Optional custom title for the second spec block
   mechanicalSpecs: SpecRow[];
   environmentalSpecs: SpecRow[];
-  
+  additionalSpecs: SpecRow[];
+
   // Tabs
   tabs: TabConfig[];
   defaultTab?: string;
-  
+
   // Manufacturer
   manufacturerInfo: ManufacturerInfo;
 }
@@ -163,7 +166,7 @@ export function ProductPageTemplate({ data }: ProductPageTemplateProps) {
               
               <div className="pt-2 w-full">
                 <button className="w-full sm:w-auto px-8 py-3 bg-orange-500 hover:bg-orange-600 text-white rounded-lg text-[14px] font-semibold shadow-md shadow-orange-500/20 transition-all transform hover:-translate-y-0.5 active:translate-y-0" style={{ fontFamily: 'Inter' }}>
-                  Request Loan or Sample
+                  Request Info
                 </button>
                 {data.datasheetUrl && (
                   <div className="mt-4 flex items-center justify-center md:justify-start gap-2">
@@ -211,8 +214,14 @@ export function ProductPageTemplate({ data }: ProductPageTemplateProps) {
 
         {/* Detailed Specs Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <DetailedSpecColumn title="Electrical" rows={data.electricalSpecs} />
-          <DetailedSpecColumn title="Mechanical" rows={data.mechanicalSpecs} />
+          <div className="space-y-6">
+            <DetailedSpecColumn title="Electrical" rows={data.electricalSpecs} />
+            <DetailedSpecColumn title={data.lnaPerformanceTitle || "LNA Performance"} rows={data.lnaPerformanceSpecs} />
+          </div>
+          <div className="space-y-6">
+            <DetailedSpecColumn title="Mechanical" rows={data.mechanicalSpecs} />
+            <DetailedSpecColumn title="Ordering Info" rows={data.additionalSpecs} />
+          </div>
           <DetailedSpecColumn title="Environmental" rows={data.environmentalSpecs} />
         </div>
 

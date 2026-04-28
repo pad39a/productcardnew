@@ -47,7 +47,12 @@ export const satcomAmplifierData: ProductPageData = {
     { label: 'Input/Output', value: 'WR-137 Waveguide' },
     { label: 'Noise Figure', value: '<3.5 dB' },
   ],
-  
+
+  lnaPerformanceSpecs: [
+    { label: 'LNA Noise', value: '< 2.5dB' },
+    { label: 'LNA P1dB out', value: '12dBm' },
+  ],
+
   mechanicalSpecs: [
     { label: 'Dimensions', value: '483 x 133 x 450 mm' },
     { label: 'Weight', value: '12.5 kg' },
@@ -67,7 +72,16 @@ export const satcomAmplifierData: ProductPageData = {
     { label: 'EMI/EMC', value: 'CE, FCC Part 15 Class A' },
     { label: 'MTBF', value: '>100,000 hours @ 25°C' },
   ],
-  
+
+  additionalSpecs: [
+    { label: 'Warranty', value: '5 Years' },
+    { label: 'Lead Time', value: '10-14 Weeks' },
+    { label: 'Certifications', value: 'FCC, CE, IC' },
+    { label: 'ITAR Status', value: 'ITAR Controlled' },
+    { label: 'Country of Origin', value: 'USA' },
+    { label: 'Export Control', value: 'EAR License Required' },
+  ],
+
   // Tabs - Different set for this product
   tabs: [
     { name: 'Teleport', color: 'blue' },

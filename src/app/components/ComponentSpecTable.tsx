@@ -27,7 +27,7 @@ export function ComponentSpecTable({ data }: ComponentSpecTableProps) {
               Technology
             </th>
             <th className="px-4 py-3 text-[13px] font-semibold text-slate-600 text-center uppercase tracking-wider" style={{ fontFamily: 'Inter' }}>
-              Radiation-SEU
+              Configuration
             </th>
             <th className="px-4 py-3 text-[13px] font-semibold text-slate-600 text-center uppercase tracking-wider" style={{ fontFamily: 'Inter' }}>
               Bands
